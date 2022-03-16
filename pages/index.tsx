@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
 const Home: NextPage = () => {
   const handleConnectWallet = async () => {
     console.log("Connect Wallet working...")
@@ -24,11 +25,12 @@ const Home: NextPage = () => {
             <Image src="/Kalvi.jpeg" alt="Kalvi Logo" width={500} height={300} />
           </span>
         </a>
-        <p className={styles.description}>
+        <p className="text-3xl font-bold underline">
         Incentivizing Learning by streaming rewards
         </p>
+        <br></br>
 
-        <button id='btn-connect-wallet' onClick={handleConnectWallet} >Connect Wallet</button>
+        <button className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded' onClick={handleConnectWallet} >Connect Wallet</button>
       </main>
 
       <footer className={styles.footer}>
